@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  webapp:
+    build: ./probot
+    environment:
+      GHE_HOST: github.training.cerner.com
+      WEBHOOK_SECRET: development
+      LOG_LEVEL: debug
+      APP_ID: 29
+      PRIVATE_KEY_PATH: /run/secrets/private-key
+  
