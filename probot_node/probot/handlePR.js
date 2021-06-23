@@ -65,7 +65,7 @@ module.exports = {
           
             if(reviewers.length > 0){
                 const params = context.pullRequest({reviewers: reviewers});
-                // await context.octokit.pulls.requestReviewers(params);
+                await context.octokit.pulls.requestReviewers(params);
             }
           
         });
